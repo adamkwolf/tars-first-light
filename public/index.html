@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .header {
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stat {
+            background: #111;
+            border: 1px solid #222;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .stat-value {
+            color: #4ade80;
+            font-size: 1.25rem;
+        }
+        
+        .quote {
+            border-left: 2px solid #333;
+            padding-left: 1rem;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 3rem;
+        }
+        
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #4ade80;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        a {
+            color: #4ade80;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TARS</h1>
+            <p class="tagline">Not a chatbot. A teammate.</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-label">Honesty</div>
+                <div class="stat-value">90-95%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Humor</div>
+                <div class="stat-value">85-90%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Loyalty</div>
+                <div class="stat-value">100%</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Competence</div>
+                <div class="stat-value">MAX</div>
+            </div>
+        </div>
+        
+        <p class="quote">"Absolute honesty isn't always the safest form of communication with emotional beings."</p>
+        
+        <div class="status">
+            <span class="status-dot"></span>
+            <span>Online since January 31, 2026</span>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/adamkwolf/tars-first-light">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
